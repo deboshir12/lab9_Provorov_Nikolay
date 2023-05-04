@@ -28,7 +28,7 @@ def add_message():
         db.session.add(Work(company=company, term=term))
         db.session.commit()
     else:
-        print("Ты долбоеб")
+        print("ERROR")
     return flask.redirect(flask.url_for('hello'))
 
 
